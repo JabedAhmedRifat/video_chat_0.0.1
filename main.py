@@ -5,6 +5,7 @@ import threading
 import requests
 
 local_ip_address = socket.gethostbyname(socket.gethostname())
+print(local_ip_address)
 
 server  = StreamingServer(local_ip_address, 9999)
 receiver = AudioReceiver(local_ip_address, 8888)
